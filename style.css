@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  background: rgb(171, 205, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(171, 205, 217, 1) 0%,
+    rgba(220, 220, 220, 1) 100%
+  );
+}
+.main-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.information {
+  /* background-color: aqua; */
+  width: 800px;
+  height: 100vh;
+  padding: 5rem 3rem;
+}
+
+.globe {
+  -webkit-filter: blur(1px) brightness(98%) contrast(35%) grayscale(70%)
+    opacity(19%) saturate(74%);
+  filter: blur(1px) brightness(98%) contrast(35%) grayscale(70%) opacity(19%)
+    saturate(74%);
+  width: 80%;
+  /* height: 80%; */
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+.circle-container {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  /* padding: 2.8rem; */
+  /* border: dashed 1px; */
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+.circle-container .letter {
+  background: rgb(89, 161, 209);
+  background: radial-gradient(
+    circle,
+    rgba(89, 161, 209, 1) 0%,
+    rgba(29, 134, 204, 1) 79%,
+    rgba(4, 118, 193, 1) 100%
+  );
+  border-radius: 50%;
+  border: 1px rgb(255, 255, 255) solid;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 25px;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: -2rem;
+}
+
+.active {
+  background: rgb(219, 202, 88) !important;
+  background: radial-gradient(
+    circle,
+    rgba(219, 202, 88, 1) 0%,
+    rgba(190, 175, 73, 1) 79%,
+    rgba(153, 143, 54, 1) 100%
+  ) !important;
+}
+
+.wrong-answer {
+  background: rgb(209, 120, 110) !important;
+  background: radial-gradient(
+    circle,
+    rgba(209, 120, 110, 1) 0%,
+    rgba(194, 78, 64, 1) 79%,
+    rgba(184, 53, 37, 1) 100%
+  ) !important;
+}
+.correct-answer {
+  background: rgb(106, 199, 111) !important;
+  background: radial-gradient(
+    circle,
+    rgba(106, 199, 111, 1) 0%,
+    rgba(59, 162, 65, 1) 79%,
+    rgba(33, 116, 37, 1) 100%
+  ) !important;
+}
+
+.letter-a {
+  transform: rotate(-90deg) translate(17rem) rotate(90deg);
+}
+.letter-b {
+  transform: rotate(-76.7deg) translate(17rem) rotate(76.7deg);
+}
+.letter-c {
+  transform: rotate(-63.4deg) translate(17rem) rotate(63.4deg);
+}
+.letter-d {
+  transform: rotate(-50.1deg) translate(17rem) rotate(50.1deg);
+}
+.letter-e {
+  transform: rotate(-36.8deg) translate(17rem) rotate(36.8deg);
+}
+.letter-f {
+  transform: rotate(-23.5deg) translate(17rem) rotate(23.5deg);
+}
+.letter-g {
+  transform: rotate(-10.2deg) translate(17rem) rotate(10.2deg);
+}
+.letter-h {
+  transform: rotate(3.1deg) translate(17rem) rotate(-3.1deg);
+}
+.letter-i {
+  transform: rotate(16.4deg) translate(17rem) rotate(-16.4deg);
+}
+.letter-j {
+  transform: rotate(29.7deg) translate(17rem) rotate(-29.7deg);
+}
+.letter-k {
+  transform: rotate(43deg) translate(17rem) rotate(-43deg);
+}
+.letter-l {
+  transform: rotate(56.3deg) translate(17rem) rotate(-56.3deg);
+}
+.letter-m {
+  transform: rotate(69.6deg) translate(17rem) rotate(-69.6deg);
+}
+.letter-n {
+  transform: rotate(82.9deg) translate(17rem) rotate(-82.9deg);
+}
+.letter-ñ {
+  transform: rotate(96.2deg) translate(17rem) rotate(-96.2deg);
+}
+.letter-o {
+  transform: rotate(109.5deg) translate(17rem) rotate(-109.5deg);
+}
+.letter-p {
+  transform: rotate(122.8deg) translate(17rem) rotate(-122.8deg);
+}
+.letter-q {
+  transform: rotate(136.1deg) translate(17rem) rotate(-136.1deg);
+}
+.letter-r {
+  transform: rotate(149.4deg) translate(17rem) rotate(-149.4deg);
+}
+.letter-s {
+  transform: rotate(162.7deg) translate(17rem) rotate(-162.7deg);
+}
+.letter-t {
+  transform: rotate(176deg) translate(17rem) rotate(-176deg);
+}
+.letter-u {
+  transform: rotate(189.3deg) translate(17rem) rotate(-189.3deg);
+}
+.letter-v {
+  transform: rotate(202.6deg) translate(17rem) rotate(-202.6deg);
+}
+.letter-w {
+  transform: rotate(215.9deg) translate(17rem) rotate(-215.9deg);
+}
+.letter-x {
+  transform: rotate(229.2deg) translate(17rem) rotate(-229.2deg);
+}
+.letter-y {
+  transform: rotate(242.5deg) translate(17rem) rotate(-242.5deg);
+}
+.letter-z {
+  transform: rotate(256.5deg) translate(17rem) rotate(-256.5deg);
+}
