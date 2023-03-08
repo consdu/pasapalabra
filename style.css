@@ -22,31 +22,18 @@ body {
 }
 
 .information {
-  /* background-color: aqua; */
-  width: 800px;
+  width: 50vw;
   height: 100vh;
   padding: 5rem 3rem;
 }
 
-.globe {
-  -webkit-filter: blur(1px) brightness(98%) contrast(35%) grayscale(70%)
-    opacity(19%) saturate(74%);
-  filter: blur(1px) brightness(98%) contrast(35%) grayscale(70%) opacity(19%)
-    saturate(74%);
-  width: 80%;
-  /* height: 80%; */
-  margin-top: 70px;
-  margin-left: 60px;
-}
-
 .circle-container {
   position: relative;
-  width: 40rem;
-  height: 40rem;
+  width: 50vw;
+  height: 100%;
   /* padding: 2.8rem; */
   /* border: dashed 1px; */
   border-radius: 50%;
-  margin-left: 3rem;
 }
 .circle-container .letter {
   background: rgb(89, 161, 209);
