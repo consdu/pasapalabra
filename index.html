@@ -25,7 +25,7 @@
         <div class="letter letter-l">L</div>
         <div class="letter letter-m">M</div>
         <div class="letter letter-n">N</div>
-        <div class="letter letter-ñ">N</div>
+        <div class="letter letter-ñ">Ñ</div>
         <div class="letter letter-o">O</div>
         <div class="letter letter-p">P</div>
         <div class="letter letter-q">Q</div>
@@ -35,24 +35,29 @@
         <div class="letter letter-u">U</div>
         <div class="letter letter-v">V</div>
         <div class="letter letter-w">W</div>
-        <div class="letter letter-x correct-answer">X</div>
-        <div class="letter letter-y wrong-answer">Y</div>
-        <div class="letter letter-z active">Z</div>
+        <div class="letter letter-x">X</div>
+        <div class="letter letter-y">Y</div>
+        <div class="letter letter-z">Z</div>
       </div>
-      <div class="information">
-        <div class="info-wrapper">
+      <div class="information-section">
+        <div class="information-wrapper">
           <p class="question">
             Groundhog day probably came from a German tradition, which animal
             did the Germans look for?
           </p>
           <form class="user-form">
-            <input class="user-answer" type="text" />
-            <button class="btn submit">SUBMIT</button>
-            <button class="btn pasapalabra">PASAPALABRA</button>
+            <input
+              class="user-answer"
+              type="text"
+              placeholder="Enter here your answer"
+              required
+            />
+            <button class="btn submit" type="submit">SUBMIT</button>
+            <button type="button" class="btn skip">PASAPALABRA</button>
           </form>
         </div>
       </div>
     </main>
   </body>
-  <script src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </html>
