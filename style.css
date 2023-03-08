@@ -24,15 +24,62 @@ body {
 .information {
   width: 50vw;
   height: 100vh;
-  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.info-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  padding: 100px;
+}
+.question {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.user-answer {
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.user-form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: none;
+  width: 50%;
+}
+
+.btn.submit {
+  background-color: rgb(142, 243, 124);
+}
+.btn.pasapalabra {
+  background-color: rgb(242, 211, 86);
+}
+
+.btn:hover {
+  opacity: 1.1;
+  transform: scale(1.03);
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .circle-container {
   position: relative;
   width: 50vw;
   height: 100%;
-  /* padding: 2.8rem; */
-  /* border: dashed 1px; */
   border-radius: 50%;
 }
 .circle-container .letter {
@@ -58,33 +105,33 @@ body {
   margin: -2rem;
 }
 
-.active {
-  background: rgb(219, 202, 88) !important;
+.circle-container .active {
+  background: rgb(219, 202, 88);
   background: radial-gradient(
     circle,
     rgba(219, 202, 88, 1) 0%,
     rgba(190, 175, 73, 1) 79%,
     rgba(153, 143, 54, 1) 100%
-  ) !important;
+  );
 }
 
-.wrong-answer {
-  background: rgb(209, 120, 110) !important;
+.circle-container .wrong-answer {
+  background: rgb(209, 120, 110);
   background: radial-gradient(
     circle,
     rgba(209, 120, 110, 1) 0%,
     rgba(194, 78, 64, 1) 79%,
     rgba(184, 53, 37, 1) 100%
-  ) !important;
+  );
 }
-.correct-answer {
-  background: rgb(106, 199, 111) !important;
+.circle-container .correct-answer {
+  background: rgb(106, 199, 111);
   background: radial-gradient(
     circle,
     rgba(106, 199, 111, 1) 0%,
     rgba(59, 162, 65, 1) 79%,
     rgba(33, 116, 37, 1) 100%
-  ) !important;
+  );
 }
 
 .letter-a {
