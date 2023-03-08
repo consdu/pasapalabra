@@ -33,6 +33,11 @@ body {
   width: 100%;
   padding: 60px;
 }
+
+.results-wrapper {
+  display: none;
+}
+
 .question {
   font-size: 20px;
   padding: 20px;
@@ -46,7 +51,7 @@ body {
   padding: 5px;
 }
 
-.user-form {
+.game-form {
   padding: 20px;
   display: flex;
   align-items: center;
