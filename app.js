@@ -4,56 +4,62 @@ import { allQuestions, getGameQuestions } from './questionsDB.js';
 
 const questionText = document.querySelector('.question');
 const userAnswer = document.querySelector('.user-answer');
-const submitButton = document.querySelector('.submit');
 const skipButton = document.querySelector('.skip');
 const userForm = document.querySelector('.user-form');
 
 const letters = document.querySelectorAll('.letter');
 
-const showQuestion = (currentIndex, gameQuestions) => {
+const showQuestion = (allIndexes, currentIndex, gameQuestions) => {
+  letters.forEach((letter) => letter.classList.remove('active'));
+  letters[allIndexes[currentIndex]].classList.add('active');
   userAnswer.value = '';
-  questionText.innerText = gameQuestions[currentIndex].question;
+  questionText.innerText = gameQuestions[allIndexes[currentIndex]].question;
 };
 
 const playGame = () => {
+  const gameQuestions = getGameQuestions(allQuestions);
   let correctAnswers = 0;
   let wrongAnswers = 0;
-  let skippedAnswers = [];
+  let allIndexes = [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26,
+  ];
   let currentIndex = 0;
-  const gameQuestions = getGameQuestions(allQuestions);
 
   skipButton.addEventListener('click', () => {
-    letters[currentIndex].classList.toggle('active');
-    skippedAnswers.push(currentIndex);
+    if (currentIndex >= allIndexes.length - 1) {
+      currentIndex = 0;
+      return showQuestion(allIndexes, currentIndex, gameQuestions);
+    }
     currentIndex++;
-    console.log(skippedAnswers);
-    return showQuestion(currentIndex, gameQuestions);
+    return showQuestion(allIndexes, currentIndex, gameQuestions);
   });
 
   userForm.addEventListener('submit', (event) => {
-    console.log('submit');
     event.preventDefault();
-    if (userAnswer.value.toLowerCase() === gameQuestions[currentIndex].answer) {
-      if (currentIndex === 26) {
-        currentIndex = 0;
-      }
-      gameQuestions[currentIndex].status = 1;
-      letters[currentIndex].classList.toggle('correct-answer');
-      currentIndex++;
+    if (
+      userAnswer.value.toLowerCase() ===
+      gameQuestions[allIndexes[currentIndex]].answer
+    ) {
+      gameQuestions[allIndexes[currentIndex]].status = 1;
+      letters[allIndexes[currentIndex]].classList.toggle('correct-answer');
+      allIndexes.splice(currentIndex, 1);
       correctAnswers++;
-      return showQuestion(currentIndex, gameQuestions);
+      return showQuestion(allIndexes, currentIndex, gameQuestions);
     }
-    if (userAnswer.value.toLowerCase() !== gameQuestions[currentIndex].answer) {
-      gameQuestions[currentIndex].status = 0;
-      letters[currentIndex].classList.toggle('wrong-answer');
-      currentIndex++;
+    if (
+      userAnswer.value.toLowerCase() !==
+      gameQuestions[allIndexes[currentIndex]].answer
+    ) {
+      gameQuestions[allIndexes[currentIndex]].status = 0;
+      letters[allIndexes[currentIndex]].classList.toggle('wrong-answer');
+      allIndexes.splice(currentIndex, 1);
       wrongAnswers++;
-      console.log(gameQuestions);
-      return showQuestion(currentIndex, gameQuestions);
+      return showQuestion(allIndexes, currentIndex, gameQuestions);
     }
   });
 
-  showQuestion(currentIndex, gameQuestions);
+  showQuestion(allIndexes, currentIndex, gameQuestions);
 };
 
 playGame();
