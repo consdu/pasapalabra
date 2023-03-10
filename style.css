@@ -14,6 +14,16 @@ body {
     rgba(220, 220, 220, 1) 100%
   );
 }
+
+li {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
+
 .main-layout {
   display: flex;
   height: 100vh;
@@ -28,29 +38,68 @@ body {
   align-items: center;
 }
 
-.information-wrapper {
+.start-wrapper {
   margin-inline: auto;
   width: 100%;
   padding: 60px;
 }
 
+.game-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  padding: 60px;
+}
 .results-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.hide-wrapper {
   display: none;
 }
 
-.question {
+.intro {
   font-size: 20px;
   padding: 20px;
   margin-bottom: 40px;
   text-align: center;
 }
+.question {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  height: 100px;
+}
+
+.user-name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+}
+
 .user-answer {
   margin-bottom: 20px;
   font-size: 20px;
-  width: 50%;
+  width: 200px;
   padding: 5px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
+}
+::placeholder {
+  text-align: center;
+  color: rgba(186, 181, 181, 0.95);
 }
 
+.start-form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 .game-form {
   padding: 20px;
   display: flex;
@@ -58,15 +107,22 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-
+.score-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
 .btn {
   font-size: 20px;
   padding: 10px;
   cursor: pointer;
   border: none;
-  width: 50%;
+  width: 200px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
 }
-
+.play-again {
+  margin-top: 30px;
+}
 .btn.submit {
   background-color: rgb(97, 160, 197);
   color: rgb(0, 0, 0);
@@ -77,10 +133,8 @@ body {
 }
 
 .btn:hover {
-  opacity: 1.1;
-  transform: scale(1.03);
-  transition-property: transform;
-  transition-duration: 0.5s;
+  transform: scale(1.01);
+  transition: transform 0.2s linear;
 }
 
 .circle-container {
@@ -90,7 +144,7 @@ body {
   border-radius: 50%;
 }
 .circle-container .letter {
-  background: rgb(89, 161, 209);
+  background-color: rgb(89, 161, 209);
   background: radial-gradient(
     circle,
     rgba(89, 161, 209, 1) 0%,

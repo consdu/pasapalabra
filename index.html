@@ -41,25 +41,54 @@
       </div>
       <div class="information-section">
         <div class="start-wrapper">
-          <p>Bienvenido al pasapalabra...</p>
-          <form class="start-form"></form>
+          <div class="intro">
+            <p>Welcome to the <span>PASAPALABRA</span> game.</p>
+            <br />
+            <p>
+              In this game you have to answer a question fo each letter of the
+              alphabet during 120 seconds in total. You can skip a question by
+              clicking the yellow button and submit your answer by clicking the
+              blue one.
+            </p>
+            <br />
+            <p>Enter your name below and start having fun.</p>
+          </div>
+          <form class="start-form">
+            <input
+              class="user-name"
+              type="text"
+              placeholder="Your name here"
+              required
+            />
+            <button class="btn start-game" type="submit">START GAME</button>
+          </form>
         </div>
-        <div class="information-wrapper">
+        <div class="game-wrapper hide-wrapper">
           <p class="question"></p>
           <form class="game-form">
             <input
               class="user-answer"
               type="text"
-              placeholder="Enter here your answer"
+              placeholder="Your answer here"
               required
             />
             <button class="btn submit" type="submit">SUBMIT</button>
             <button class="btn skip" type="button">PASAPALABRA</button>
           </form>
         </div>
-        <div class="results-wrapper"></div>
+        <div class="results-wrapper hide-wrapper">
+          <p class="score-title">Current scoreboard:</p>
+          <ol class="users-list">
+            <li>Constantin: 3</li>
+            <li>Constantin: 2</li>
+            <li>Constantin: 1</li>
+          </ol>
+          <button class="btn play-again">PLAY AGAIN</button>
+        </div>
       </div>
     </main>
   </body>
   <script type="module" src="./app.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </html>
