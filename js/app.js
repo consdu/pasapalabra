@@ -1,10 +1,8 @@
 import { allQuestions, getGameQuestions } from './questionsDB.js';
 
-const correctAnswerAudio = new Audio('correct-answer.mp3');
-const wrongAnswerAudio = new Audio('wrong-answer.mp3');
-const skipQuestionAudio = new Audio('skip-question.mp3');
-
-// DOM selection
+const correctAnswerAudio = new Audio('./sounds/correct-answer.mp3');
+const wrongAnswerAudio = new Audio('./sounds/wrong-answer.mp3');
+const skipQuestionAudio = new Audio('./sounds/skip-question.mp3');
 
 const questionText = document.querySelector('.question');
 const userAnswer = document.querySelector('.user-answer');
