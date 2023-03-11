@@ -11,11 +11,13 @@ const userAnswer = document.querySelector('.user-answer');
 const skipButton = document.querySelector('.skip');
 const gameForm = document.querySelector('.game-form');
 const userNameInput = document.querySelector('.user-name');
+const userNameText = document.querySelector('.user-name-text');
 const startForm = document.querySelector('.start-form');
 const startWrapper = document.querySelector('.start-wrapper');
 const gameWrapper = document.querySelector('.game-wrapper');
 const resultsWrapper = document.querySelector('.results-wrapper');
 const usersList = document.querySelector('.users-list');
+const timer = document.querySelector('.timer');
 
 const letters = document.querySelectorAll('.letter');
 const scoreBoard = [];
@@ -23,7 +25,7 @@ let userName;
 
 const showQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
   if (allIndexes.length === 0) {
-    gameWrapper.classList.add('hide-wrapper');
+    gameWrapper.classList.add('hide');
     scoreBoard.push({
       name: userName,
       points: score.correctAnswers,
@@ -36,7 +38,7 @@ const showQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
       .join('');
 
     usersList.innerHTML = currentUsers;
-    resultsWrapper.classList.remove('hide-wrapper');
+    resultsWrapper.classList.remove('hide');
     return;
   }
 
@@ -124,11 +126,24 @@ const playGame = () => {
   showQuestion(allIndexes, currentIndex, gameQuestions, score);
 };
 
+const startTimer = () => {
+  let timerLength = 120;
+  timer.innerText = timerLength;
+  setInterval(() => {
+    timer.innerText = timerLength;
+    timerLength--;
+  }, 1000);
+};
+
 startForm.addEventListener('submit', (event) => {
   event.preventDefault();
   userName = userNameInput.value;
   userNameInput.innerText = '';
-  startWrapper.classList.add('hide-wrapper');
-  gameWrapper.classList.remove('hide-wrapper');
+  startWrapper.classList.add('hide');
+  gameWrapper.classList.remove('hide');
+  userNameText.innerText = userName;
+  userNameText.classList.remove('hide');
+  startTimer();
+  timer.classList.remove('hide');
   playGame();
 });

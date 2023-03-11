@@ -38,112 +38,13 @@ li {
   align-items: center;
 }
 
-.start-wrapper {
-  margin-inline: auto;
-  width: 100%;
-  padding: 60px;
-}
-
-.game-wrapper {
-  margin-inline: auto;
-  width: 100%;
-  padding: 60px;
-}
-.results-wrapper {
-  width: 100%;
-  text-align: center;
-}
-
-.hide-wrapper {
-  display: none;
-}
-
-.intro {
-  font-size: 20px;
-  padding: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.question {
-  font-size: 20px;
-  padding: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-  height: 100px;
-}
-
-.user-name {
-  margin-bottom: 20px;
-  font-size: 20px;
-  width: 200px;
-  padding: 5px;
-  text-align: center;
-}
-
-.user-answer {
-  margin-bottom: 20px;
-  font-size: 20px;
-  width: 200px;
-  padding: 5px;
-  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
-    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
-}
-::placeholder {
-  text-align: center;
-  color: rgba(186, 181, 181, 0.95);
-}
-
-.start-form {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.game-form {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.score-title {
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-.btn {
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  border: none;
-  width: 200px;
-  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
-    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
-}
-.play-again {
-  margin-top: 30px;
-}
-.btn.submit {
-  background-color: rgb(97, 160, 197);
-  color: rgb(0, 0, 0);
-}
-.btn.skip {
-  background-color: rgb(213, 183, 64);
-  color: rgb(0, 0, 0);
-}
-
-.btn:hover {
-  transform: scale(1.01);
-  transition: transform 0.2s linear;
-}
-
-.circle-container {
+.letters-section {
   position: relative;
   width: 50vw;
   height: 100%;
   border-radius: 50%;
 }
-.circle-container .letter {
+.letters-section .letter {
   background-color: rgb(89, 161, 209);
   background: radial-gradient(
     circle,
@@ -166,7 +67,7 @@ li {
   margin: -2rem;
 }
 
-.circle-container .active {
+.letters-section .active {
   background: rgb(219, 202, 88);
   background: radial-gradient(
     circle,
@@ -176,7 +77,7 @@ li {
   );
 }
 
-.circle-container .wrong-answer {
+.letters-section .wrong-answer {
   background: rgb(209, 120, 110);
   background: radial-gradient(
     circle,
@@ -185,7 +86,7 @@ li {
     rgba(184, 53, 37, 1) 100%
   );
 }
-.circle-container .correct-answer {
+.letters-section .correct-answer {
   background: rgb(106, 199, 111);
   background: radial-gradient(
     circle,
@@ -275,4 +176,127 @@ li {
 }
 .letter-z {
   transform: rotate(256.5deg) translate(17rem) rotate(-256.5deg);
+}
+
+.start-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  padding: 60px;
+}
+
+.game-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  padding: 60px;
+}
+.results-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.intro {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.question {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  height: 100px;
+}
+
+.user-name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+}
+
+.user-answer {
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 200px;
+  padding: 5px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
+}
+::placeholder {
+  text-align: center;
+  color: rgba(186, 181, 181, 0.95);
+}
+
+.start-form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.game-form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.score-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.btn {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
+}
+.play-again {
+  margin-top: 30px;
+}
+.btn.submit {
+  background-color: rgb(97, 160, 197);
+  color: rgb(0, 0, 0);
+}
+.btn.skip {
+  background-color: rgb(213, 183, 64);
+  color: rgb(0, 0, 0);
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s linear;
+}
+
+.timer {
+  padding: 15px 20px;
+  border: 1px solid black;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  bottom: 30px;
+  left: 30px;
+  font-size: 30px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
+}
+
+.user-name-text {
+  padding: 15px 20px;
+  border: 1px solid black;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 20px;
+  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
+    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
 }
