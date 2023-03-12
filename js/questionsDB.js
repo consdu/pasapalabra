@@ -92,7 +92,7 @@ const allQuestions = [
     questions: [
       {
         question: "By what name is the artist Marshall Mathers better known?",
-        answer: "eminen",
+        answer: "eminem",
       },
       {
         question:
