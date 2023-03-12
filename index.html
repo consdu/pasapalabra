@@ -24,7 +24,6 @@
         <div class="letter letter-l">L</div>
         <div class="letter letter-m">M</div>
         <div class="letter letter-n">N</div>
-        <div class="letter letter-ñ">Ñ</div>
         <div class="letter letter-o">O</div>
         <div class="letter letter-p">P</div>
         <div class="letter letter-q">Q</div>
@@ -76,17 +75,17 @@
           </form>
         </div>
         <div class="results-wrapper hide">
-          <p class="score-title">Current scoreboard:</p>
-          <ol class="users-list">
-            <li>Constantin: 3</li>
-            <li>Constantin: 2</li>
-            <li>Constantin: 1</li>
-          </ol>
+          <p class="score-title">Top 10 players</p>
+          <ol class="users-list"></ol>
           <button class="btn play-again">PLAY AGAIN</button>
+          <button class="btn reset-score">RESET SCORE</button>
         </div>
       </div>
       <div class="timer hide"></div>
-      <p class="user-name-text hide">Constantin</p>
+      <div class="user-name-wrapper hide">
+        <p class="user-name-text"></p>
+        <p class="now-playing">NOW PLAYING</p>
+      </div>
     </main>
   </body>
   <script type="module" src="./js/app.js"></script>

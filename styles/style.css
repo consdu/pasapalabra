@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 body {
@@ -66,6 +66,10 @@ li {
   height: 3.5rem;
   margin: -2rem;
 }
+/* .letters-section .active {
+  transform: scale(2);
+  transition: transform 0.5s cubic-bezier(0, 0, 0.5, 1);
+} */
 
 .letters-section .active {
   background: rgb(219, 202, 88);
@@ -100,82 +104,79 @@ li {
   transform: rotate(-90deg) translate(17rem) rotate(90deg);
 }
 .letter-b {
-  transform: rotate(-76.7deg) translate(17rem) rotate(76.7deg);
+  transform: rotate(-76.16deg) translate(17rem) rotate(76.16deg);
 }
 .letter-c {
-  transform: rotate(-63.4deg) translate(17rem) rotate(63.4deg);
+  transform: rotate(-62.32deg) translate(17rem) rotate(62.32deg);
 }
 .letter-d {
-  transform: rotate(-50.1deg) translate(17rem) rotate(50.1deg);
+  transform: rotate(-48.48deg) translate(17rem) rotate(48.48deg);
 }
 .letter-e {
-  transform: rotate(-36.8deg) translate(17rem) rotate(36.8deg);
+  transform: rotate(-34.64deg) translate(17rem) rotate(34.64deg);
 }
 .letter-f {
-  transform: rotate(-23.5deg) translate(17rem) rotate(23.5deg);
+  transform: rotate(-20.8deg) translate(17rem) rotate(20.8deg);
 }
 .letter-g {
-  transform: rotate(-10.2deg) translate(17rem) rotate(10.2deg);
+  transform: rotate(-6.95deg) translate(17rem) rotate(6.95deg);
 }
 .letter-h {
-  transform: rotate(3.1deg) translate(17rem) rotate(-3.1deg);
+  transform: rotate(6.88deg) translate(17rem) rotate(-6.88deg);
 }
 .letter-i {
-  transform: rotate(16.4deg) translate(17rem) rotate(-16.4deg);
+  transform: rotate(20.72deg) translate(17rem) rotate(-20.72deg);
 }
 .letter-j {
-  transform: rotate(29.7deg) translate(17rem) rotate(-29.7deg);
+  transform: rotate(34.56deg) translate(17rem) rotate(-34.56deg);
 }
 .letter-k {
-  transform: rotate(43deg) translate(17rem) rotate(-43deg);
+  transform: rotate(48.4deg) translate(17rem) rotate(-48.4deg);
 }
 .letter-l {
-  transform: rotate(56.3deg) translate(17rem) rotate(-56.3deg);
+  transform: rotate(62.24deg) translate(17rem) rotate(-62.24deg);
 }
 .letter-m {
-  transform: rotate(69.6deg) translate(17rem) rotate(-69.6deg);
+  transform: rotate(76.08deg) translate(17rem) rotate(-76.08deg);
 }
 .letter-n {
-  transform: rotate(82.9deg) translate(17rem) rotate(-82.9deg);
-}
-.letter-ñ {
-  transform: rotate(96.2deg) translate(17rem) rotate(-96.2deg);
+  transform: rotate(89.92deg) translate(17rem) rotate(-89.92deg);
 }
 .letter-o {
-  transform: rotate(109.5deg) translate(17rem) rotate(-109.5deg);
+  transform: rotate(103.76deg) translate(17rem) rotate(-103.76deg);
 }
 .letter-p {
-  transform: rotate(122.8deg) translate(17rem) rotate(-122.8deg);
+  transform: rotate(117.6deg) translate(17rem) rotate(-117.6deg);
 }
 .letter-q {
-  transform: rotate(136.1deg) translate(17rem) rotate(-136.1deg);
+  transform: rotate(131.44deg) translate(17rem) rotate(-131.44deg);
 }
 .letter-r {
-  transform: rotate(149.4deg) translate(17rem) rotate(-149.4deg);
+  transform: rotate(145.28deg) translate(17rem) rotate(-145.28deg);
 }
 .letter-s {
-  transform: rotate(162.7deg) translate(17rem) rotate(-162.7deg);
+  transform: rotate(159.12deg) translate(17rem) rotate(-159.12deg);
 }
 .letter-t {
-  transform: rotate(176deg) translate(17rem) rotate(-176deg);
+  transform: rotate(172.96deg) translate(17rem) rotate(-172.96deg);
 }
 .letter-u {
-  transform: rotate(189.3deg) translate(17rem) rotate(-189.3deg);
+  transform: rotate(186.8deg) translate(17rem) rotate(-186.8deg);
 }
 .letter-v {
-  transform: rotate(202.6deg) translate(17rem) rotate(-202.6deg);
+  transform: rotate(200.64deg) translate(17rem) rotate(-200.64deg);
 }
 .letter-w {
-  transform: rotate(215.9deg) translate(17rem) rotate(-215.9deg);
+  transform: rotate(214.48deg) translate(17rem) rotate(-214.48deg);
 }
 .letter-x {
-  transform: rotate(229.2deg) translate(17rem) rotate(-229.2deg);
+  transform: rotate(228.32deg) translate(17rem) rotate(-228.32deg);
 }
 .letter-y {
-  transform: rotate(242.5deg) translate(17rem) rotate(-242.5deg);
+  transform: rotate(242.16deg) translate(17rem) rotate(-242.16deg);
 }
 .letter-z {
-  transform: rotate(256.5deg) translate(17rem) rotate(-256.5deg);
+  transform: rotate(256deg) translate(17rem) rotate(-256deg);
 }
 
 .start-wrapper {
@@ -192,6 +193,9 @@ li {
 .results-wrapper {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hide {
@@ -225,8 +229,6 @@ li {
   font-size: 20px;
   width: 200px;
   padding: 5px;
-  box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
-    0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
 }
 ::placeholder {
   text-align: center;
@@ -260,8 +262,8 @@ li {
   box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
     0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
 }
-.play-again {
-  margin-top: 30px;
+.btn.play-again {
+  margin-block: 30px;
 }
 .btn.submit {
   background-color: rgb(97, 160, 197);
@@ -272,9 +274,14 @@ li {
   color: rgb(0, 0, 0);
 }
 
+.btn.reset-score {
+  background: rgb(209, 120, 110);
+  background: radial-gradient(circle, rgba(209, 120, 110, 1) 0%);
+}
+
 .btn:hover {
   transform: scale(1.01);
-  transition: transform 0.2s linear;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 
 .timer {
@@ -290,13 +297,27 @@ li {
     0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
 }
 
-.user-name-text {
+.user-name-wrapper {
   padding: 15px 20px;
   border: 1px solid black;
   position: absolute;
+  min-width: 150px;
+  text-align: center;
   top: 30px;
   right: 30px;
   font-size: 20px;
   box-shadow: 0.1px 0.4px 5.8px rgba(0, 0, 0, 0.028),
     0.2px 1.3px 22.7px rgba(0, 0, 0, 0.042), 1px 6px 80px rgba(0, 0, 0, 0.07);
+}
+
+.now-playing {
+  position: absolute;
+  background-color: rgb(187, 177, 38);
+  font-size: 12px;
+  text-align: start;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 0.7rem;
+  top: -16px;
+  left: 17%;
 }

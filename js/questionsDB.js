@@ -1,554 +1,557 @@
 const allQuestions = [
   {
-    letter: 'a',
+    letter: "a",
     status: null,
     questions: [
       {
         question:
-          'Con la A : Conducto por donde va la sangre desde el corazón a las demás partes del cuerpo.',
-        answer: 'arteria',
+          "What is the only country beside Azerbaijan that starts with an 'A' but doesn't end with an 'A'?",
+        answer: "afghanistan",
       },
       {
         question:
-          'Con la A : Trozo de cualquier material ardiendo pero sin llama.',
-        answer: 'ascua',
+          "Acetylsalicylic acid is the active ingredient in which incredibly popular and well known drug?",
+        answer: "aspirin",
       },
       {
         question:
-          'Con la A : Dicho de una supuesta criatura extraterrestre : Apoderarse de alguien.',
-        answer: 'abducir',
+          "The Northern Lights are the Aurora Borealis, what name is given to the Southern Lights?",
+        answer: "aurora australis",
       },
     ],
   },
+
   {
-    letter: 'b',
+    letter: "b",
     status: null,
     questions: [
       {
         question:
-          'Con la B : En los barcos, especie de armario que está fijo en la cubierta y situado muy cerca del timón donde se pone la brújula.',
-        answer: 'bitácora',
+          "On which London street is the commemoration statue of fictional character Sherlock Holmes?",
+        answer: "baker street",
       },
       {
         question:
-          'Con la B : Líquido amargo de color amarillo verdoso producido por el hígado y que ayuda a la digestión de los alimentos.',
-        answer: 'bilis',
+          "Belgium, the Netherlands and Luxembourg came together in 1948 to form an economic union, known as what?",
+        answer: "benelux",
       },
       {
         question:
-          'Con la B : Juego que ha sacado de quicio a todos los ISDI Coders en las sesiones de precurso.',
-        answer: 'bingo',
+          "Which spirit is added to sugar and egg yolks to make Advocaat?",
+        answer: "brandy",
       },
     ],
   },
+
   {
-    letter: 'c',
+    letter: "c",
     status: null,
     questions: [
       {
         question:
-          'Con la C : Persona que sirve a otras de guía y les va enseñando y explicando lugares y cosas interesantes.',
-        answer: 'cicerone',
+          "What instrument is used for measuring the distance between two points on a curved surface?",
+        answer: "caliper",
+      },
+      {
+        question: "In which country was Greenpeace founded in 1971?",
+        answer: "canada",
       },
       {
         question:
-          'Con la C : Estilo de pintura que comenzó en Francia a principios de este siglo y que se caracteriza por representar figuras y objetos mediante formas geométricas.',
-        answer: 'cubismo',
-      },
-      {
-        question: 'Con la C : Niño, crío, bebé.',
-        answer: 'churumbel',
+          "Which chemical compound in the body is linked to hardening of the arteries?",
+        answer: "cholesterol",
       },
     ],
   },
+
   {
-    letter: 'd',
+    letter: "d",
     status: null,
     questions: [
       {
         question:
-          'Con la D : Actividad que realiza un país para mantener buenas relaciones con el resto de países.',
-        answer: 'diplomacia',
+          "Best remembered for his fairy tales, what nationality was Hans Christian Andersen?",
+        answer: "danish",
       },
       {
         question:
-          'Con la D : Signo ortográfico que se coloca encima de la u para indicar que esta letra ha de pronunciarse.',
-        answer: 'diéresis',
+          "What name is given to a doctor who specialises in skin disorders?",
+        answer: "dermatologist",
       },
       {
         question:
-          'Con la D : Anormalidad en la función del aparato digestivo caracterizada por frecuentes evacuaciones y su consistencia líquida.',
-        answer: 'diarrea',
+          "Hills and ridges composed of drifting sand are known as what?",
+        answer: "dunes",
       },
     ],
   },
+
   {
-    letter: 'e',
+    letter: "e",
     status: null,
     questions: [
       {
-        question:
-          'Con la E : Cada uno de los dos momentos del año en que, por estar el Sol sobre el ecuador, los días y las noches duran lo mismo en toda la Tierra.',
-        answer: 'equinoccio',
+        question: "By what name is the artist Marshall Mathers better known?",
+        answer: "eminen",
       },
       {
         question:
-          'Con la E : Línea que se forma en la piel cuando ésta se ha estirado excesivamente.',
-        answer: 'estría',
+          "In the early 20th century, rattlesnake venom was used to treat which illness?",
+        answer: "epilepsy",
       },
       {
-        question:
-          'Con la E : Gelatinoso y se encuentra debajo de la membrana plasmática. Los cazafantasmas medían su radiación.',
-        answer: 'ectoplasma',
+        question: "The study of word origins is called what?",
+        answer: "etymology",
       },
     ],
   },
+
   {
-    letter: 'f',
+    letter: "f",
     status: null,
     questions: [
       {
-        question:
-          'Con la F : Ciencia que estudia las funciones de los órganos de los seres vivos.',
-        answer: 'fisiología',
+        question: "What is the largest and longest bone in the human body?",
+        answer: "femur",
       },
       {
-        question: 'Con la F : Sonido de una letra.',
-        answer: 'fonema',
+        question: "Which city is the capital of the Italian region of Tuscany?",
+        answer: "florence",
       },
       {
         question:
-          'Con la F : Que no requiere gran esfuerzo, capacidad o dificultad.',
-        answer: 'facil',
+          "What is the hazelnut liqueur named for the mysterious monk that made it 300 years ago?",
+        answer: "frangelico",
       },
     ],
   },
+
   {
-    letter: 'g',
+    letter: "g",
     status: null,
     questions: [
       {
         question:
-          'Con la G : Cada una de las épocas, hace miles de años, en las que hacía mucho más frío que en la actualidad y gran parte de la Tierra estaba cubierta por hielo.',
-        answer: 'glaciación',
+          "Scientists have been able to segment what into 4 main types: spiral, elliptical, peculiar, and irregular?",
+        answer: "galaxies",
+      },
+      {
+        question: "Who directed the 1973 film “American Graffiti”?",
+        answer: "george lucas",
       },
       {
         question:
-          'Con la G : Se dice de las personas que viven en las grandes llanuras de Argentina y Uruguay y llevan el ganado de un lado a otro.',
-        answer: 'gaucho',
-      },
-      {
-        question:
-          'Con la G : Conjunto enorme de estrellas, polvo interestelar, gases y partículas.',
-        answer: 'galaxia',
+          "What name is given to a traditional, flat-bottomed Venetian rowing boat?",
+        answer: "gondola",
       },
     ],
   },
+
   {
-    letter: 'h',
+    letter: "h",
     status: null,
     questions: [
       {
-        question:
-          'Con la H : Planta de flores amarillas que se usa como condimento, por el sabor de sus frutos parecido al del anís, y también en medicina porque ayuda a hacer la digestión.',
-        answer: 'hinojo',
+        question: "A depilatory is a substance used for removing what?",
+        answer: "hair",
       },
       {
         question:
-          'Con la H : Poesía o composición musical en alabanza de alguien o algo, como la que se dedica a un país.',
-        answer: 'himno',
+          "The four throwing events at the olympics are shot put, discus, javelin and what?",
+        answer: "hammer",
       },
       {
-        question: 'Con la H : Suicidio ritual japonés por desentrañamiento.',
-        answer: 'harakiri',
+        question: "Which is the most abundant element in the universe?",
+        answer: "hydrogen",
       },
     ],
   },
+
   {
-    letter: 'i',
+    letter: "i",
     status: null,
     questions: [
       {
         question:
-          'Con la I : Capacidad para inventar cosas o para pensar y hablar con gracia.',
-        answer: 'ingenio',
+          "What company was formed by the Swede, Ingvar Kamprad, one of the richest men in the world?",
+        answer: "ikea",
+      },
+      {
+        question: "What is the common name for the condition dyspepsia?",
+        answer: "indigestion",
       },
       {
         question:
-          'Con la I : Mineral capaz de atraer el hierro u otros metales.',
-        answer: 'imán',
-      },
-      {
-        question: 'Con la I : Templo cristiano.',
-        answer: 'iglesia',
+          "What Turkish city has spread to both sides of the Bosporus Strait?",
+        answer: "istanbul",
       },
     ],
   },
+
   {
-    letter: 'j',
+    letter: "j",
     status: null,
     questions: [
       {
         question:
-          'Con la J : Mineral muy duro, de color verde o blanquecino, que se emplea en joyería y para hacer objetos de adorno. ',
-        answer: 'jade',
+          "As of 2021, who has received the most Academy Award nominations for any male actor with twelve nominations?",
+        answer: "jack nicholson",
       },
-      {
-        question: 'Con la J : Cría del jabalí.',
-        answer: 'jabato',
-      },
+      { question: "What is the capital of Indonesia?", answer: "jakarta" },
       {
         question:
-          'Con la J : Variedad salvaje del cerdo que sale en la película El Rey León, de nombre Pumba',
-        answer: 'jabali',
+          "Actor Jared Leto played the part of which DC Comics character in the 2017 film “Justice League”?",
+        answer: "joker",
       },
     ],
   },
+
   {
-    letter: 'k',
+    letter: "k",
     status: null,
     questions: [
       {
-        question: 'Con la K : Variedad de manteca que usa en cosmetica. ',
-        answer: 'karite',
+        question:
+          "Translated as “wooden temples”, what is the name of the capital city of Nepal?",
+        answer: "kathmandu",
       },
       {
         question:
-          'Con la K : Piloto japonés que se lanzaba en su avión contra un barco u otro objetivo enemigo para destruirlo, aunque muriera al hacerlo.',
-        answer: 'kamikaze',
+          "Which food stuff has a name which translates into English as 'On A Skewer'?",
+        answer: "kebab",
       },
       {
-        question: 'Con la K : Artes marciales de China',
-        answer: 'kung fu',
+        question:
+          "Which fibrous, sulphur-rich protein occurs naturally in hair, horns, hooves and feathers?",
+        answer: "keratin",
       },
     ],
   },
+
   {
-    letter: 'l',
+    letter: "l",
     status: null,
     questions: [
       {
         question:
-          'Con la L : Gusano muy largo de color rojizo que se alimenta de sustancias que hay en la tierra.',
-        answer: 'lombriz',
+          "Which famous opera house in Milan, Italy, rose to its greatest heights under Toscanini?",
+        answer: "la scala",
       },
       {
         question:
-          'Con la L : 	Frase que expresa la forma en que debe actuar una persona.',
-        answer: 'lema',
+          "Which type of acid is produced in the muscles during exercise?",
+        answer: "lactic",
       },
       {
-        question: 'Con la L : Hombre lobo',
-        answer: 'licantropo',
+        question: "What is the main ingredient of the Indian dish “Dal”?",
+        answer: "lentils",
       },
     ],
   },
+
   {
-    letter: 'm',
+    letter: "m",
     status: null,
     questions: [
       {
         question:
-          'Con la M : Prenda rígida o almidonada, a veces con aros, que antiguamente llevaban las mujeres bajo la falda para darle vuelo.',
-        answer: 'miriñaque',
+          "What Venetian traveller and explorer landed in China and reached Kublai Khan's court in 1275?",
+        answer: "marco polo",
       },
       {
         question:
-          'Con la M : Nombre que se daba a los musulmanes que vivían en los reinos cristianos de la península ibérica',
-        answer: 'mudéjar',
+          "In Roman mythology, which God was the father of Romulus and Remus, the founders of Rome?",
+        answer: "mars",
       },
       {
         question:
-          'Con la M : Persona que huye del trato con otras personas o siente gran aversión hacia ellas.',
-        answer: 'misantropo',
+          "Which of the 48 contiguous states extends farthest north and is known as 'The Land of 10,000 Lakes'?",
+        answer: "minnesota",
       },
     ],
   },
+
   {
-    letter: 'n',
+    letter: "n",
     status: null,
     questions: [
       {
         question:
-          'Con la N : En las leyendas mitológicas, diosa con forma de muchacha que vivía en los bosques, las fuentes o los ríos.',
-        answer: 'ninfa',
+          "Whose army did Admiral Nelson defeat at the battle of Trafalgar?",
+        answer: "napoleon",
       },
       {
         question:
-          'Con la N : Árbol grande con la corteza lisa y de color gris cuyo fruto es la nuez.',
-        answer: 'nogal',
+          "What was Keanu Reeves' computer world alias in 'The Matrix'?",
+        answer: "neo",
       },
       {
-        question: 'Con la N : Demostración de poca inteligencia.',
-        answer: 'necedad',
+        question:
+          "What was the first self-governing country in the world in which all women had the right to vote in parliamentary elections?",
+        answer: "new zealand",
       },
     ],
   },
+
   {
-    letter: 'ñ',
+    letter: "o",
     status: null,
     questions: [
       {
         question:
-          'Contiene la Ñ :	Ave parecida al avestruz, pero más pequeña y con tres dedos en cada pie.',
-        answer: 'ñandú',
-      },
-      {
-        question: 'Contiene la Ñ : Cursi o demasiado delicado.',
-        answer: 'ñoño',
+          "“Ladies Fingers' ', which can get a bit slimy when the seed pods are cooked, are better known as what?",
+        answer: "okra",
       },
       {
         question:
-          'Contiene la Ñ : Indicio que permite deducir algo de lo que no se tiene un conocimiento directo.',
-        answer: 'señal',
+          "The Ballad Of Reading Gaol & De Profundis, were written from the experiences of who, while in gaol?",
+        answer: "oscar wilde",
+      },
+      {
+        question:
+          "As well as being a unit of measurement, what other name is used for the snow leopard?",
+        answer: "ounce",
       },
     ],
   },
+
   {
-    letter: 'o',
+    letter: "p",
     status: null,
     questions: [
       {
         question:
-          'Con la O : Palabra que imita el sonido que hace un animal o una cosa.',
-        answer: 'onomatopeya',
+          "What now famous painter was once so impoverished that he kept warm by burning his own paintings?",
+        answer: "pablo picasso",
       },
       {
         question:
-          'Con la O : Se dice del color que es una mezcla de amarillo y marrón.',
-        answer: 'ocre',
+          "In which cult 1994 film are all of the clocks stuck on 4:20?",
+        answer: "pulp fiction",
       },
       {
         question:
-          'Con la O : Humanoide fantástico de apariencia terrible y bestial, piel de color verde creada por el escritor Tolkien.',
-        answer: 'orco',
+          "What is the name of the mountain chain separating most of Spain from France?",
+        answer: "pyrenees",
       },
     ],
   },
+
   {
-    letter: 'p',
+    letter: "q",
     status: null,
     questions: [
       {
         question:
-          'Con la P : Edificio que es parte de un conjunto, de otro edificio más grande, o que está muy cerca de él.',
-        answer: 'pabellón',
+          "Widely regarded as one of the greatest players to ever play, American football star Tom Brady would be found in what position?",
+        answer: "quarterback",
       },
       {
         question:
-          'Con la P : Conjunto de reglas o ceremonias que hay que cumplir en los actos oficiales o solemnes.',
-        answer: 'protocolo',
+          "Which English cartoonist, caricaturist, illustrator and children's writer has illustrated 18 books written by Roald Dahl?",
+        answer: "quentin blake",
       },
       {
-        question:
-          'Con la P : Raza ancestral tecnológicamente avanzada que se caracteriza por sus grandes poderes psíonicos del videojuego StarCraft.',
-        answer: 'protoss',
+        question: "What is another word for “A witty remark”?",
+        answer: "quip",
       },
     ],
   },
+
   {
-    letter: 'q',
+    letter: "r",
     status: null,
     questions: [
       {
         question:
-          'Con la Q : Cosa que, sin ser real, alguien la imagina como posible o verdadera.',
-        answer: 'quimera',
+          "Which group, from Oxford, England, released the album “O.K. Computer” in 1997?",
+        answer: "radiohead",
       },
       {
         question:
-          'Con la Q : Pueblo indio que habita en Perú y que vivía allí antes del descubrimiento de América.',
-        answer: 'quechua',
+          "In which modern day country would you find the region known as Transylvania?",
+        answer: "romania",
       },
       {
         question:
-          'Con la Q : Producto obtenido por la maduración de la cuajada de la leche.',
-        answer: 'queso',
+          "What unit of currency is shared by Sri Lanka, Nepal, and India?",
+        answer: "rupee",
       },
     ],
   },
+
   {
-    letter: 'r',
+    letter: "s",
     status: null,
     questions: [
       {
         question:
-          'Con la R : Pez marino que tiene una especie de ventosa en la cabeza con la que se fija a otros peces más grandes.',
-        answer: 'rémora',
+          "What is a box-like funeral receptacle for a corpse, most commonly carved in stone, and usually displayed above ground?",
+        answer: "sarcophagus",
       },
       {
         question:
-          'Con la R : Tabla o elemento similar que se coloca contra la pared para poner en ella objetos.',
-        answer: 'repisa',
+          "When used to describe a camera, what does 'S' in SLR stand for?",
+        answer: "single (lens reflex)",
       },
       {
-        question: 'Con la R : Roedor.',
-        answer: 'raton',
+        question:
+          "Four thirds multiplied by pi multiplied by the radius cubed, gives you the volume of what geometric objects?",
+        answer: "spheres",
       },
     ],
   },
+
   {
-    letter: 's',
+    letter: "t",
     status: null,
     questions: [
       {
         question:
-          'Con la S : Traje negro y largo parecido a una túnica que llevan algunos curas y religiosos.',
-        answer: 'sotana',
+          "What term is used for the speed at which a piece of music is played?",
+        answer: "tempo",
       },
       {
         question:
-          'Con la S : Nombre de dos momentos del año que marcan el inicio del verano y el comienzo del invierno.',
-        answer: 'solisticio',
+          "What name is given to a great wave resulting from an earthquake?",
+        answer: "tsunami",
       },
       {
         question:
-          'Con la S : Comunidad salvadora de todo desarrollador informático.',
-        answer: 'stackoverflow',
+          "Which region in central Italy is regarded as the birthplace of the Italian Renaissance?",
+        answer: "tuscany",
       },
     ],
   },
+
   {
-    letter: 't',
+    letter: "u",
     status: null,
     questions: [
       {
         question:
-          'Con la T : Escrito o declaración de palabra en el que alguien dice lo que quiere que se haga después de su muerte, sobre todo con su dinero o sus pertenencias.',
-        answer: 'testamento',
+          "On TV, who struggles in the publishing business and is rebuked because she doesn't meet the traditional standards of beauty?",
+        answer: "ugly betty",
       },
       {
         question:
-          'Con la T : Capa de la atmósfera más cercana a la superficie de la Tierra, en la que tienen lugar los fenómenos del tiempo meteorológico.',
-        answer: 'troposfera',
+          "Which modernist novel by Irish writer James Joyce was first serialised in parts in the American journal The Little Review?",
+        answer: "ulysses",
       },
       {
         question:
-          'Con la T : Película del director James Cameron que consolidó a Arnold Schwarzenegger como actor en 1984.',
-        answer: 'terminator',
+          "As of 2021, who is the world record holder in the 100 metres, 200 metres, and 4 X 100 metres relay?",
+        answer: "usain bolt",
       },
     ],
   },
+
   {
-    letter: 'u',
+    letter: "v",
     status: null,
     questions: [
       {
         question:
-          'Con la U : Conjunto de casas y edificios que suelen ser parecidos y donde hay tiendas, parques y otros espacios que necesitan las personas que allí viven.',
-        answer: 'urbanización',
+          "What is administered to help the immune system develop protection from a disease?",
+        answer: "vaccines",
       },
       {
         question:
-          'Con la U : Algo que es bueno y que deseamos pero que es imposible o muy difícil de realizar.',
-        answer: 'utopía',
+          "Which instrument do you associate with Stradivarius and also the Amati family?",
+        answer: "violin",
       },
       {
         question:
-          'Con la U : Escritor y filósofo español de la generación del 98 autor del libro Niebla en 1914.',
-        answer: 'unamuno',
+          "Translating to 'Ruler of the East', which city lies at the eastern terminus of the Trans-Siberian railway?",
+        answer: "vladivostok",
       },
     ],
   },
+
   {
-    letter: 'v',
+    letter: "w",
     status: null,
     questions: [
       {
         question:
-          'Con la V : Pájaro de color casi siempre negro o pardo que tiene el pico delgado, las alas muy largas y la cola en forma de horquilla. Vuela muy rápido.',
-        answer: 'vencejo',
+          "Released in November 1996, what was the debut single by English girl group the Spice Girls?",
+        answer: "wannabe",
       },
       {
         question:
-          'Con la V : Parte hacia afuera que tienen las gorras por delante y que sirve para que el sol no nos haga daño en los ojos.',
-        answer: 'visera',
+          "James Howlett, also known as Logan is a fictional character from the X-Men, what is his codename?",
+        answer: "wolverine",
       },
       {
         question:
-          'Con la V : Nombre dado a los miembros de los pueblos nórdicos originarios de Escandinavia, famosos por sus incursiones y pillajes en Europa.',
-        answer: 'vikingos',
+          "Which song by Miley Cyrus, recorded for her fourth studio album, Bangerz (2013), won the award for World's Best Video at the 2014 World Music Awards?",
+        answer: "wrecking ball",
       },
     ],
   },
+
   {
-    letter: 'w',
+    letter: "x",
     status: null,
     questions: [
       {
         question:
-          'Con la W : Licor con mucho alcohol que se hace al fermentar la cebada o algunos otros cereales.',
-        answer: 'whisky',
-      },
-      {
-        question: 'Con la W : Película del oeste americano.',
-        answer: 'western',
+          "Also a huge TV franchise, what describes a noteworthy special talent or quality?",
+        answer: "x-factor",
       },
       {
         question:
-          'Contiene la W : Emparedado hecho con dos rebanadas de pan entre las cuales se coloca jamón y queso.',
-        answer: 'sandwich',
+          "Alprazolam is a fast-acting tranquilliser of medium duration in the triazolobenzodiazepine class, sold under what brand name?",
+        answer: "xanax",
+      },
+      {
+        question:
+          "Ethernet was a registered trademark of what company, better known for photocopiers?",
+        answer: "xerox",
       },
     ],
   },
+
   {
-    letter: 'x',
+    letter: "y",
     status: null,
     questions: [
       {
         question:
-          'Con la X : Manera de hacer grabados sobre madera, dejando vacías las partes que deben quedar blancas en el dibujo.',
-        answer: 'xilografía',
-      },
-      {
-        question: 'Con la X : Odio o antipatía hacia los extranjeros.',
-        answer: 'xenófobia',
+          "What name is given to a length of interlocked fibres, suitable for use in the production of textiles, sewing, knitting, etc?",
+        answer: "yarn",
       },
       {
         question:
-          'Contiene la X : Toxina bacteriana utilizada en cirujía estética.',
-        answer: 'botox',
+          "What name is given to a group of physical, mental, and spiritual practices or disciplines which originated in ancient India?",
+        answer: "yoga",
+      },
+      {
+        question:
+          "Which former country existed in Southeast Europe and Central Europe for most of the 20th century and came into existence after World War I in 1918?",
+        answer: "yugoslavia",
       },
     ],
   },
+
   {
-    letter: 'y',
+    letter: "z",
     status: null,
     questions: [
       {
         question:
-          'Con la Y : Mamífero de gran tamaño parecido a un toro, pero con el cuero cubierto de un abundante pelo que lo protege del frío.',
-        answer: 'yak',
+          "What is the capital and largest city of the country Croatia?",
+        answer: "zagreb",
       },
       {
         question:
-          'Con la Y : Elemento químico de color oscuro que se encuentra en el suelo en forma de sales, así como en las algas y otros animales marinos.',
-        answer: 'yodo',
+          "Introduced in 1986, which princess is the titular character in a Nintendo video game series?",
+        answer: "zelda",
       },
       {
         question:
-          'Contiene la Y : Pequeño cáctus conocido por sus alcaloides psicoactivos utilizado de forma ritual y medicinal por indígenas americanos.',
-        answer: 'peyote',
-      },
-    ],
-  },
-  {
-    letter: 'z',
-    status: null,
-    questions: [
-      {
-        question:
-          'Con la Z : Banda más o menos ancha, cubierta de otro material o pintada, que hay en la parte baja de las paredes de una habitación.',
-        answer: 'zócalo',
-      },
-      {
-        question: 'Con la Z : Lugar donde hay muchas zarzas.',
-        answer: 'zarzal',
-      },
-      {
-        question:
-          'Con la Z : Escuela de budismo que busca la experiencia de la sabiduría más allá del discurso racional.',
-        answer: 'peyote',
+          "Who was David Bowie's titular alter ego, a fictional androgynous and bisexual rock star who is sent to Earth as a saviour?",
+        answer: "ziggy stardust",
       },
     ],
   },
