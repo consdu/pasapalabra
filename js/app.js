@@ -112,7 +112,7 @@ const playGame = () => {
   const startTimer = () => {
     gameRunning.play();
 
-    let timerLength = 120;
+    let timerLength = 180;
     timerText.innerText = timerLength;
 
     const timer = setInterval(() => {
