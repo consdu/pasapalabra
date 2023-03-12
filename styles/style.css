@@ -66,12 +66,12 @@ li {
   height: 3.5rem;
   margin: -2rem;
 }
-/* .letters-section .active {
+.letters-section .active {
   transform: scale(2);
   transition: transform 0.5s cubic-bezier(0, 0, 0.5, 1);
-} */
+}
 
-.letters-section .active {
+/* .letters-section .active {
   background: rgb(219, 202, 88);
   background: radial-gradient(
     circle,
@@ -79,7 +79,7 @@ li {
     rgba(190, 175, 73, 1) 79%,
     rgba(153, 143, 54, 1) 100%
   );
-}
+} */
 
 .letters-section .wrong-answer {
   background: rgb(209, 120, 110);
