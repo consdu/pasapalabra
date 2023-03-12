@@ -73,8 +73,13 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
   if (allIndexes.length === 0) {
     timerText.remove();
     gameRunning.pause();
-    gameOver.play();
+
+    if (gameQuestions.some((question) => question.status === 0)) {
+      gameOver.play();
+    }
+
     gameWrapper.classList.add("hide");
+
     scoreBoard.push({
       name: userName,
       points: score.correctAnswers,
