@@ -4,7 +4,10 @@ const correctAnswerAudio = new Audio("./sounds/correct-answer.mp3");
 const wrongAnswerAudio = new Audio("./sounds/wrong-answer.mp3");
 const skipQuestionAudio = new Audio("./sounds/skip-question.mp3");
 const winAudio = new Audio("./sounds/final-sound.mp3");
+const gameRunning = new Audio("./sounds/game-music.mp3");
 const gameOver = new Audio("./sounds/game-over.mp3");
+
+gameRunning.volume = 0.1;
 
 const questionText = document.querySelector(".question");
 const userAnswer = document.querySelector(".user-answer");
@@ -65,10 +68,12 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
   if (gameQuestions.every((gameQuestion) => gameQuestion.status === 1)) {
     winAudio.play();
     showConfetti();
-    return;
   }
 
   if (allIndexes.length === 0) {
+    timerText.remove();
+    gameRunning.pause();
+    gameOver.play();
     gameWrapper.classList.add("hide");
     scoreBoard.push({
       name: userName,
@@ -100,6 +105,8 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
 
 const playGame = () => {
   const startTimer = () => {
+    gameRunning.play();
+
     let timerLength = 120;
     timerText.innerText = timerLength;
 
