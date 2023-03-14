@@ -7,7 +7,7 @@ const winAudio = new Audio("./sounds/final-sound.mp3");
 const gameRunning = new Audio("./sounds/game-music.mp3");
 const gameOver = new Audio("./sounds/game-over.mp3");
 
-gameRunning.volume = 0.1;
+gameRunning.volume = 0.7;
 
 const questionText = document.querySelector(".question");
 const userAnswer = document.querySelector(".user-answer");
