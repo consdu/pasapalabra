@@ -63,6 +63,13 @@ const showConfetti = () => {
   }, 250);
 };
 
+const showElement = (element) => {
+  element.classList.remove("hide");
+};
+const hideElement = (element) => {
+  element.classList.add("hide");
+};
+
 const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
   userAnswer.focus();
 
@@ -79,7 +86,7 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
       gameOver.play();
     }
 
-    gameWrapper.classList.add("hide");
+    hideElement(gameWrapper);
 
     document.querySelector(".letters-section").remove();
 
@@ -101,7 +108,7 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
 
     usersList.innerHTML = currentUsers;
     informationSection.classList.add("full-width");
-    resultsWrapper.classList.remove("hide");
+    showElement(resultsWrapper);
     letters.forEach((letter) => letter.classList.remove("active"));
     return;
   }
@@ -201,11 +208,11 @@ startForm.addEventListener("submit", (event) => {
   event.preventDefault();
   userName = userNameInput.value;
   userNameInput.innerText = "";
-  startWrapper.classList.add("hide");
-  gameWrapper.classList.remove("hide");
+  hideElement(startWrapper);
+  showElement(gameWrapper);
   userNameText.innerText = userName;
-  userNameWrapper.classList.remove("hide");
-  timerText.classList.remove("hide");
+  showElement(userNameWrapper);
+  showElement(timerText);
   playGame();
 });
 
