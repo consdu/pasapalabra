@@ -38,6 +38,10 @@ li {
   align-items: center;
 }
 
+.full-width {
+  width: 100vw;
+}
+
 .letters-section {
   position: relative;
   width: 50vw;

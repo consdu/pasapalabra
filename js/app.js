@@ -19,6 +19,7 @@ const userNameInput = document.querySelector(".user-name");
 const userNameText = document.querySelector(".user-name-text");
 const userNameWrapper = document.querySelector(".user-name-wrapper");
 const startForm = document.querySelector(".start-form");
+const informationSection = document.querySelector(".information-section");
 const startWrapper = document.querySelector(".start-wrapper");
 const gameWrapper = document.querySelector(".game-wrapper");
 const resultsWrapper = document.querySelector(".results-wrapper");
@@ -80,6 +81,8 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
 
     gameWrapper.classList.add("hide");
 
+    document.querySelector(".letters-section").remove();
+
     scoreBoard.push({
       name: userName,
       points: score.correctAnswers,
@@ -97,6 +100,7 @@ const getQuestion = (allIndexes, currentIndex, gameQuestions, score) => {
       .join("");
 
     usersList.innerHTML = currentUsers;
+    informationSection.classList.add("full-width");
     resultsWrapper.classList.remove("hide");
     letters.forEach((letter) => letter.classList.remove("active"));
     return;
