@@ -75,16 +75,6 @@ li {
   transition: transform 0.5s cubic-bezier(0, 0, 0.5, 1);
 }
 
-/* .letters-section .active {
-  background: rgb(219, 202, 88);
-  background: radial-gradient(
-    circle,
-    rgba(219, 202, 88, 1) 0%,
-    rgba(190, 175, 73, 1) 79%,
-    rgba(153, 143, 54, 1) 100%
-  );
-} */
-
 .letters-section .wrong-answer {
   background: rgb(209, 120, 110);
   background: radial-gradient(
